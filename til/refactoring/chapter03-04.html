@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>03-04. 긴 매개변수 목록 | wally-wally TIL</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="wally-wally&#39;s TIL">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/wally-wally-til/assets/css/0.styles.01a7673b.css" as="style"><link rel="preload" href="/wally-wally-til/assets/js/app.7290cc93.js" as="script"><link rel="preload" href="/wally-wally-til/assets/js/2.fd76ebd9.js" as="script"><link rel="preload" href="/wally-wally-til/assets/js/41.e220fcee.js" as="script"><link rel="prefetch" href="/wally-wally-til/assets/js/10.5e62a48d.js"><link rel="prefetch" href="/wally-wally-til/assets/js/11.cdeef2b6.js"><link rel="prefetch" href="/wally-wally-til/assets/js/12.96913a7a.js"><link rel="prefetch" href="/wally-wally-til/assets/js/13.feea80f6.js"><link rel="prefetch" href="/wally-wally-til/assets/js/14.2a18b1c6.js"><link rel="prefetch" href="/wally-wally-til/assets/js/15.edd92323.js"><link rel="prefetch" href="/wally-wally-til/assets/js/16.85e8420c.js"><link rel="prefetch" href="/wally-wally-til/assets/js/17.872b0e5a.js"><link rel="prefetch" href="/wally-wally-til/assets/js/18.f1794982.js"><link rel="prefetch" href="/wally-wally-til/assets/js/19.31d9f8de.js"><link rel="prefetch" href="/wally-wally-til/assets/js/20.5b9d905b.js"><link rel="prefetch" href="/wally-wally-til/assets/js/21.fd903a51.js"><link rel="prefetch" href="/wally-wally-til/assets/js/22.b70ad72f.js"><link rel="prefetch" href="/wally-wally-til/assets/js/23.5b055039.js"><link rel="prefetch" href="/wally-wally-til/assets/js/24.ee38e719.js"><link rel="prefetch" href="/wally-wally-til/assets/js/25.3e86b39e.js"><link rel="prefetch" href="/wally-wally-til/assets/js/26.c979affe.js"><link rel="prefetch" href="/wally-wally-til/assets/js/27.403238cc.js"><link rel="prefetch" href="/wally-wally-til/assets/js/28.c30380d5.js"><link rel="prefetch" href="/wally-wally-til/assets/js/29.b0adcab9.js"><link rel="prefetch" href="/wally-wally-til/assets/js/3.1037c5a1.js"><link rel="prefetch" href="/wally-wally-til/assets/js/30.6b44c68b.js"><link rel="prefetch" href="/wally-wally-til/assets/js/31.14732cd6.js"><link rel="prefetch" href="/wally-wally-til/assets/js/32.8fce34a1.js"><link rel="prefetch" href="/wally-wally-til/assets/js/33.dd320240.js"><link rel="prefetch" href="/wally-wally-til/assets/js/34.730b4e75.js"><link rel="prefetch" href="/wally-wally-til/assets/js/35.455ca7fe.js"><link rel="prefetch" href="/wally-wally-til/assets/js/36.46be3c3f.js"><link rel="prefetch" href="/wally-wally-til/assets/js/37.65234a0f.js"><link rel="prefetch" href="/wally-wally-til/assets/js/38.c59df179.js"><link rel="prefetch" href="/wally-wally-til/assets/js/39.e399ac2d.js"><link rel="prefetch" href="/wally-wally-til/assets/js/4.6aa9259c.js"><link rel="prefetch" href="/wally-wally-til/assets/js/40.6a7cf00f.js"><link rel="prefetch" href="/wally-wally-til/assets/js/42.c4a18fab.js"><link rel="prefetch" href="/wally-wally-til/assets/js/43.cf71f0f6.js"><link rel="prefetch" href="/wally-wally-til/assets/js/44.c64b51f4.js"><link rel="prefetch" href="/wally-wally-til/assets/js/45.2d4e4df7.js"><link rel="prefetch" href="/wally-wally-til/assets/js/46.62a1f374.js"><link rel="prefetch" href="/wally-wally-til/assets/js/47.b3d6ee2f.js"><link rel="prefetch" href="/wally-wally-til/assets/js/48.05637a63.js"><link rel="prefetch" href="/wally-wally-til/assets/js/49.6cfb305f.js"><link rel="prefetch" href="/wally-wally-til/assets/js/5.16508133.js"><link rel="prefetch" href="/wally-wally-til/assets/js/50.654b7091.js"><link rel="prefetch" href="/wally-wally-til/assets/js/51.3afcb09b.js"><link rel="prefetch" href="/wally-wally-til/assets/js/52.0dc1fea3.js"><link rel="prefetch" href="/wally-wally-til/assets/js/53.d39b3b34.js"><link rel="prefetch" href="/wally-wally-til/assets/js/54.1cf44a14.js"><link rel="prefetch" href="/wally-wally-til/assets/js/55.d652135f.js"><link rel="prefetch" href="/wally-wally-til/assets/js/56.e6be1fda.js"><link rel="prefetch" href="/wally-wally-til/assets/js/57.82679c1c.js"><link rel="prefetch" href="/wally-wally-til/assets/js/58.80ea38e6.js"><link rel="prefetch" href="/wally-wally-til/assets/js/59.6abbca4a.js"><link rel="prefetch" href="/wally-wally-til/assets/js/6.c7b54f12.js"><link rel="prefetch" href="/wally-wally-til/assets/js/60.51882e84.js"><link rel="prefetch" href="/wally-wally-til/assets/js/61.22bb89a3.js"><link rel="prefetch" href="/wally-wally-til/assets/js/62.16402bda.js"><link rel="prefetch" href="/wally-wally-til/assets/js/7.233f38d3.js"><link rel="prefetch" href="/wally-wally-til/assets/js/8.1b1b9ffd.js"><link rel="prefetch" href="/wally-wally-til/assets/js/9.2cefa86a.js">
+    <link rel="stylesheet" href="/wally-wally-til/assets/css/0.styles.01a7673b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/wally-wally-til/" class="home-link router-link-active"><img src="/wally-wally-til/logo.png" alt="wally-wally TIL" class="logo"> <span class="site-name can-hide">wally-wally TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/wally-wally-til/til/" class="nav-link router-link-active">
+  TIL
+</a></div><div class="nav-item"><a href="/wally-wally-til/config/" class="nav-link">
+  Config
+</a></div><div class="nav-item"><a href="https://wally-wally.kr" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  wally-wally
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/wally-wally-til/til/" class="nav-link router-link-active">
+  TIL
+</a></div><div class="nav-item"><a href="/wally-wally-til/config/" class="nav-link">
+  Config
+</a></div><div class="nav-item"><a href="https://wally-wally.kr" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  wally-wally
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Introduction</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JS Deep Dive</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Effective TypeScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Refactoring</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/wally-wally-til/til/refactoring/" aria-current="page" class="sidebar-link">Overview</a></li><li><a href="/wally-wally-til/til/refactoring/chapter03-01.html" class="sidebar-link">Chapter03-01</a></li><li><a href="/wally-wally-til/til/refactoring/chapter03-02.html" class="sidebar-link">Chapter03-02</a></li><li><a href="/wally-wally-til/til/refactoring/chapter03-03.html" class="sidebar-link">Chapter03-03</a></li><li><a href="/wally-wally-til/til/refactoring/chapter03-04.html" aria-current="page" class="active sidebar-link">Chapter03-04</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/wally-wally-til/til/refactoring/chapter03-04.html#intro" class="sidebar-link">✋ Intro</a></li><li class="sidebar-sub-header"><a href="/wally-wally-til/til/refactoring/chapter03-04.html#_1-매개변수를-질의-함수로-바꾸기" class="sidebar-link">(1) 매개변수를 질의 함수로 바꾸기</a></li><li class="sidebar-sub-header"><a href="/wally-wally-til/til/refactoring/chapter03-04.html#_2-플래그-인수-제거하기" class="sidebar-link">(2) 플래그 인수 제거하기</a></li><li class="sidebar-sub-header"><a href="/wally-wally-til/til/refactoring/chapter03-04.html#_3-여러-함수를-클래스로-묶기" class="sidebar-link">(3) 여러 함수를 클래스로 묶기</a></li></ul></li><li><a href="/wally-wally-til/til/refactoring/chapter03-05.html" class="sidebar-link">Chapter03-05</a></li><li><a href="/wally-wally-til/til/refactoring/chapter03-06.html" class="sidebar-link">Chapter03-06</a></li><li><a href="/wally-wally-til/til/refactoring/chapter03-07.html" class="sidebar-link">Chapter03-07</a></li><li><a href="/wally-wally-til/til/refactoring/chapter03-08.html" class="sidebar-link">Chapter03-08</a></li><li><a href="/wally-wally-til/til/refactoring/chapter03-09.html" class="sidebar-link">Chapter03-09</a></li><li><a href="/wally-wally-til/til/refactoring/chapter03-10.html" class="sidebar-link">Chapter03-10</a></li><li><a href="/wally-wally-til/til/refactoring/chapter03-11.html" class="sidebar-link">Chapter03-11</a></li><li><a href="/wally-wally-til/til/refactoring/chapter03-12.html" class="sidebar-link">Chapter03-12</a></li><li><a href="/wally-wally-til/til/refactoring/chapter03-13.html" class="sidebar-link">Chapter03-13</a></li><li><a href="/wally-wally-til/til/refactoring/chapter03-14.html" class="sidebar-link">Chapter03-14</a></li><li><a href="/wally-wally-til/til/refactoring/chapter03-15.html" class="sidebar-link">Chapter03-15</a></li><li><a href="/wally-wally-til/til/refactoring/chapter03-16.html" class="sidebar-link">Chapter03-16</a></li><li><a href="/wally-wally-til/til/refactoring/chapter03-17.html" class="sidebar-link">Chapter03-17</a></li><li><a href="/wally-wally-til/til/refactoring/chapter03-18.html" class="sidebar-link">Chapter03-18</a></li><li><a href="/wally-wally-til/til/refactoring/chapter03-19.html" class="sidebar-link">Chapter03-19</a></li><li><a href="/wally-wally-til/til/refactoring/chapter03-20.html" class="sidebar-link">Chapter03-20</a></li><li><a href="/wally-wally-til/til/refactoring/chapter03-21.html" class="sidebar-link">Chapter03-21</a></li><li><a href="/wally-wally-til/til/refactoring/chapter03-22.html" class="sidebar-link">Chapter03-22</a></li><li><a href="/wally-wally-til/til/refactoring/chapter03-23.html" class="sidebar-link">Chapter03-23</a></li><li><a href="/wally-wally-til/til/refactoring/chapter03-24.html" class="sidebar-link">Chapter03-24</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_03-04-긴-매개변수-목록"><a href="#_03-04-긴-매개변수-목록" class="header-anchor">#</a> 03-04. 긴 매개변수 목록</h1> <br> <h2 id="intro"><a href="#intro" class="header-anchor">#</a> ✋ Intro</h2> <ul><li>프로그래밍을 처음 배울 때는 함수에 필요한 것들을 모조리 매개변수로 전달하라고 배웠다.</li> <li>하지만 매개변수 목록이 길어지면 그 자체로 이해하기 어려울 때가 존재한다.</li> <li>이러한 경우에 적용할 수 있는 리팩토링 기법을 살펴보자.</li></ul> <br> <h2 id="_1-매개변수를-질의-함수로-바꾸기"><a href="#_1-매개변수를-질의-함수로-바꾸기" class="header-anchor">#</a> (1) 매개변수를 질의 함수로 바꾸기</h2> <ul><li>종종 다른 매개변수에서 값을 얻어올 수 있는 매개변수가 있을 때 이 리팩토링 기법을 이용해서 그 매개변수를 제거할 수 있다.</li> <li>매개변수 목록은 함수의 동작에 변화를 줄 수 있는 일차적인 수단으로 다른 코드와 마찬가지로 이 목록에서도 중복은 피하는 게 좋으며 짧은수록 이해하기 쉽다.</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// before</span>
+<span class="token function">availableVacation</span><span class="token punctuation">(</span>anEmployee<span class="token punctuation">,</span> anEmployee<span class="token punctuation">.</span>grade<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">availableVacation</span><span class="token punctuation">(</span><span class="token parameter">anEmployee<span class="token punctuation">,</span> grade</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// after</span>
+<span class="token function">availableVacation</span><span class="token punctuation">(</span>anEmployee<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">availableVacation</span><span class="token punctuation">(</span><span class="token parameter">anEmployee</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> grade <span class="token operator">=</span> anEmployee<span class="token punctuation">.</span>grade<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>특정 매개변수를 제거하면 값을 결정하는 책임 주체가 달라진다.</li> <li>반면 이 기법을 적용하면 안 되는 상황도 있다.
+<ul><li>매개변수를 제거하면 피호출 함수에 원치 않는 의존성이 생길 때다.</li> <li>해당 함수가 알지 못했으면 하는 프로그램 요소에 접근해야 하는 상황을 만들 때가 존재한다.</li></ul></li> <li>주의해야할 점은 대상 함수가 참조 투명해야 한다는 것이다.
+<ul><li>참조 투명이란 '함수에 똑같은 값을 건네 호출하면 항상 똑같이 동작한다'는 뜻이다.</li> <li>이런 함수는 동작을 예측하고 테스트하기가 훨씬 쉬우니 이 특성이 사라지지 않도록 주의하자.</li> <li>따라서 매개변수를 없애는 대신 <b>가변 전역 변수를 이용하는 일은 하면 안 된다.</b> 변수 범위가 오염될 수 있는 위험이 있다.</li></ul></li></ul> <hr> <ul><li>다른 리팩토링을 수행한 후 특정 매개변수가 더는 필요 없어졌을 때가 있는데, 바로 이 리팩토링을 적용하는 가장 흔한 사례다.</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// before</span>
+
+<span class="token comment">// Order class</span>
+<span class="token keyword">get</span> <span class="token function">finalPrice</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> basePrice <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>quantity <span class="token operator">*</span> <span class="token keyword">this</span><span class="token punctuation">.</span>itemPrice<span class="token punctuation">;</span>
+  <span class="token keyword">let</span> discountLevel<span class="token punctuation">;</span>
+    
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>quantity <span class="token operator">&gt;</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    discountLevel <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    discountLevel <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+    
+  <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">discountedPrice</span><span class="token punctuation">(</span>basePrice<span class="token punctuation">,</span> discountLevel<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">discountPrice</span><span class="token punctuation">(</span><span class="token parameter">basePrice<span class="token punctuation">,</span> discountLevel</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">switch</span> <span class="token punctuation">(</span>discountLevel<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token number">1</span><span class="token operator">:</span>
+      <span class="token keyword">return</span> basePrice <span class="token operator">*</span> <span class="token number">0.95</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token number">2</span><span class="token operator">:</span>
+      <span class="token keyword">return</span> basePrice <span class="token operator">*</span> <span class="token number">0.9</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">get</span> <span class="token function">finalPrice</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> basePrice <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>quantity <span class="token operator">*</span> <span class="token keyword">this</span><span class="token punctuation">.</span>itemPrice<span class="token punctuation">;</span>
+   
+  <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">discountedPrice</span><span class="token punctuation">(</span>basePrice<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 임시 변수를 질의 함수로 바꾸기 리팩토링 적용</span>
+<span class="token keyword">get</span> <span class="token function">discountLevel</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>quantity <span class="token operator">&gt;</span> <span class="token number">100</span> <span class="token operator">?</span> <span class="token number">2</span> <span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 함수 선언 바꾸기로 해당 매개변수 제거</span>
+<span class="token function">discountPrice</span><span class="token punctuation">(</span><span class="token parameter">basePrice</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">switch</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>discountLevel<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token number">1</span><span class="token operator">:</span>
+      <span class="token keyword">return</span> basePrice <span class="token operator">*</span> <span class="token number">0.95</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token number">2</span><span class="token operator">:</span>
+      <span class="token keyword">return</span> basePrice <span class="token operator">*</span> <span class="token number">0.9</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><br> <h2 id="_2-플래그-인수-제거하기"><a href="#_2-플래그-인수-제거하기" class="header-anchor">#</a> (2) 플래그 인수 제거하기</h2> <ul><li>함수의 동작 방식을 정하는 플래그 역할의 매개변수는 이 리팩토링 기법을 이용해서 없애준다.</li> <li>여기서 플래그 인수(flag argument)란 호출되는 함수가 실행할 로직을 호출하는 쪽에서 선택하기 위해 전달하는 인수다.</li> <li>플래그 인수는 <strong>호출할 수 있는 함수들이 무엇이고 어떻게 호출해야 하는지 이해하기 어려울 수 있다.</strong> <ul><li>예를 들어 boolean flag는 코드를 읽는 이에게 뜻을 온전히 전달하지 못하기 때문에 더욱 좋지 못하다.</li> <li>함수에 전달한 <code>true</code>의 의미를 파악하는데 어려우므로 이보다는 특정한 기능 하나만 수행하는 명시적인 함수를 제공하는 편이 훨씬 깔끔하다.</li></ul></li> <li>플래그 인수의 조건
+<ul><li>호출하는 쪽에서 <code>boolean</code> 값으로 (프로그램에서 사용되는 데이터가 아닌) 리터럴 값을 건네야 한다.</li> <li>호출되는 함수는 그 인수를 (다른 함수에 전달하는 데이터가 아닌) 제어 흐름을 결정하는 데 사용해야 한다.</li></ul></li> <li>플래그 인수 없이 구현하려면 플래그 인수들의 가능한 조합 수만큼의 함수를 만들어야 한다.
+<ul><li>그런데 다른 관점에서 보면, 플래그 인수가 둘 이상이면 함수 하나가 너무 많은 일을 처리한다는 의미이기도 한다.</li> <li>그러니 같은 로직을 조합해내는 더 간단한 함수를 만들 방법을 고민해봐야 한다.</li></ul></li></ul> <hr> <ul><li>리팩토링 절차
+<ul><li>매개변수로 주어질 수 있는 값 각각에 대응하는 명시적 함수들을 생성</li> <li>원래 함수를 호출하는 코드들을 모두 찾아서 각 리터럴 값에 대응하는 명시적 함수를 호출하도록 수정</li></ul></li></ul> <hr> <ul><li>예시 - 배송일자 계산</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// before</span>
+
+<span class="token comment">// 호출문</span>
+aShipment<span class="token punctuation">.</span>deliveryDate <span class="token operator">=</span> <span class="token function">deliveryDate</span><span class="token punctuation">(</span>anOrder<span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+aShipment<span class="token punctuation">.</span>deliveryDate <span class="token operator">=</span> <span class="token function">deliveryDate</span><span class="token punctuation">(</span>anOrder<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">deliveryDate</span><span class="token punctuation">(</span><span class="token parameter">anOrder<span class="token punctuation">,</span> isRush</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>isRush<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> deliveryTime<span class="token punctuation">;</span>
+      
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'MA'</span><span class="token punctuation">,</span> <span class="token string">'CT'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span>anOrder<span class="token punctuation">.</span>deliveryState<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      deliveryTime <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'NY'</span><span class="token punctuation">,</span> <span class="token string">'NH'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span>anOrder<span class="token punctuation">.</span>deliveryState<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      deliveryTime <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      deliveryTime <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token keyword">return</span> anOrder<span class="token punctuation">.</span>placeOn<span class="token punctuation">.</span><span class="token function">plusDays</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">+</span> deliveryTime<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> deliveryTime<span class="token punctuation">;</span>
+      
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'MA'</span><span class="token punctuation">,</span> <span class="token string">'CT'</span><span class="token punctuation">,</span> <span class="token string">'NY'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span>anOrder<span class="token punctuation">.</span>deliveryState<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      deliveryTime <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'ME'</span><span class="token punctuation">,</span> <span class="token string">'NH'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span>anOrder<span class="token punctuation">.</span>deliveryState<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      deliveryTime <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      deliveryTime <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token keyword">return</span> anOrder<span class="token punctuation">.</span>placeOn<span class="token punctuation">.</span><span class="token function">plusDays</span><span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">+</span> deliveryTime<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// after</span>
+
+<span class="token comment">// 호출문</span>
+aShipment<span class="token punctuation">.</span>deliveryDate <span class="token operator">=</span> <span class="token function">rushDeliveryDate</span><span class="token punctuation">(</span>anOrder<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+aShipment<span class="token punctuation">.</span>deliveryDate <span class="token operator">=</span> <span class="token function">regularDeliveryDate</span><span class="token punctuation">(</span>anOrder<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">rushDeliveryDate</span><span class="token punctuation">(</span><span class="token parameter">anOrder</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> deliveryTime<span class="token punctuation">;</span>
+      
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'MA'</span><span class="token punctuation">,</span> <span class="token string">'CT'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span>anOrder<span class="token punctuation">.</span>deliveryState<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    deliveryTime <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'NY'</span><span class="token punctuation">,</span> <span class="token string">'NH'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span>anOrder<span class="token punctuation">.</span>deliveryState<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    deliveryTime <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    deliveryTime <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+    
+  <span class="token keyword">return</span> anOrder<span class="token punctuation">.</span>placeOn<span class="token punctuation">.</span><span class="token function">plusDays</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">+</span> deliveryTime<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">regularDeliveryDate</span><span class="token punctuation">(</span><span class="token parameter">anOrder</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> deliveryTime<span class="token punctuation">;</span>
+      
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'MA'</span><span class="token punctuation">,</span> <span class="token string">'CT'</span><span class="token punctuation">,</span> <span class="token string">'NY'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span>anOrder<span class="token punctuation">.</span>deliveryState<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    deliveryTime <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'ME'</span><span class="token punctuation">,</span> <span class="token string">'NH'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span>anOrder<span class="token punctuation">.</span>deliveryState<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    deliveryTime <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    deliveryTime <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+    
+  <span class="token keyword">return</span> anOrder<span class="token punctuation">.</span>placeOn<span class="token punctuation">.</span><span class="token function">plusDays</span><span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">+</span> deliveryTime<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><br> <h2 id="_3-여러-함수를-클래스로-묶기"><a href="#_3-여러-함수를-클래스로-묶기" class="header-anchor">#</a> (3) 여러 함수를 클래스로 묶기</h2> <ul><li>클래스는 데이터와 함수를 하나의 공유 환경으로 묶은 후, 다른 프로그램 요소와 어우러질 수 있도록 그중 일부를 외부에 제공한다.</li> <li>클래스는 객체 지향 언어의 기본인 동시에 다른 패러다임 언어에도 유용하다.</li> <li>클래스로 묶으면 이 함수들이 공유하는 공통 환경을 더 명확하게 표현할 수 있고, 각 함수에 전달되는 인수를 줄여서 객체 안에서의 함수 호출을 간결하게 만들 수 있다.</li> <li>클래스로 묶을 때의 장점은 클라이언트가 객체의 핵심 데이터를 변경할 수 있고, 파싱 객체들을 일관되게 관리할 수 있다.</li></ul> <hr> <ul><li>예시) 매달 차 계량기를 읽어서 측정값 기록</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> reading <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">customer</span><span class="token operator">:</span> <span class="token string">'ivan'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">quantity</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">month</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">year</span><span class="token operator">:</span> <span class="token number">2017</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> aReading <span class="token operator">=</span> <span class="token function">acquireReading</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> basicChargeAmount <span class="token operator">=</span> <span class="token function">calculateBaseCharge</span><span class="token punctuation">(</span>aReading<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> taxableCharge <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> basicChargeAmount <span class="token operator">-</span> <span class="token function">taxThreshold</span><span class="token punctuation">(</span>aReading<span class="token punctuation">.</span>year<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 기본 요금 계산 함수</span>
+<span class="token keyword">function</span> <span class="token function">calculateBaseCharge</span><span class="token punctuation">(</span><span class="token parameter">aReading</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">baseRate</span><span class="token punctuation">(</span>aReading<span class="token punctuation">.</span>month<span class="token punctuation">,</span> aReading<span class="token punctuation">.</span>year<span class="token punctuation">)</span> <span class="token operator">*</span> aReading<span class="token punctuation">.</span>quantity<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>절차1 - 먼저 레코드를 클래스로 변환하기 위해 레코드를 캡슐화한다.</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">class</span> <span class="token class-name">Reading</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>_customer <span class="token operator">=</span> data<span class="token punctuation">.</span>customer<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>_quantity <span class="token operator">=</span> data<span class="token punctuation">.</span>quantity<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>_month <span class="token operator">=</span> data<span class="token punctuation">.</span>month<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>_year <span class="token operator">=</span> data<span class="token punctuation">.</span>year<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+    
+  <span class="token keyword">get</span> <span class="token function">customer</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_customer<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+    
+  <span class="token keyword">get</span> <span class="token function">quantity</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_quantity<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+    
+  <span class="token keyword">get</span> <span class="token function">month</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_month<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+    
+  <span class="token keyword">get</span> <span class="token function">year</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_year<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>절차2 - 이미 만들어져 있는 <code>calculateBaseCharge()</code>부터 옮기자. 새 클래스를 사용하려면 데이터를 얻자마자 객체로 만들어야 한다.</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> rawReading <span class="token operator">=</span> <span class="token function">acquireReading</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> aReading <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Reading</span><span class="token punctuation">(</span>rawReading<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> basicChargeAmount <span class="token operator">=</span> <span class="token function">calculateBaseCharge</span><span class="token punctuation">(</span>aReading<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>그런 다음 <code>calculateBaseCharge()</code>를 새로 만든 클래스로 옮긴 후 적절한 이름(<code>baseCharge</code>)으로 바꾼다.</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">class</span> <span class="token class-name">Reading</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 생략</span>
+    
+  <span class="token keyword">get</span> <span class="token function">baseCharge</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">baseRate</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>month<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>year<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token keyword">this</span><span class="token punctuation">.</span>quantity<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> taxableCharge <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> aReading<span class="token punctuation">.</span>baseCharge <span class="token operator">-</span> <span class="token function">taxThreshold</span><span class="token punctuation">(</span>aReading<span class="token punctuation">.</span>year<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>절차3 - 이어서 세금을 부과할 소비량을 계산하는 코드를 함수로 추출하고 이를 <code>Reading</code> 클래스로 옮긴다.</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// 완성본</span>
+<span class="token keyword">class</span> <span class="token class-name">Reading</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>_customer <span class="token operator">=</span> data<span class="token punctuation">.</span>customer<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>_quantity <span class="token operator">=</span> data<span class="token punctuation">.</span>quantity<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>_month <span class="token operator">=</span> data<span class="token punctuation">.</span>month<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>_year <span class="token operator">=</span> data<span class="token punctuation">.</span>year<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+    
+  <span class="token keyword">get</span> <span class="token function">customer</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_customer<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+    
+  <span class="token keyword">get</span> <span class="token function">quantity</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_quantity<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+    
+  <span class="token keyword">get</span> <span class="token function">month</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_month<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+    
+  <span class="token keyword">get</span> <span class="token function">year</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_year<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+    
+  <span class="token keyword">get</span> <span class="token function">baseCharge</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">baseRate</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>month<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>year<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token keyword">this</span><span class="token punctuation">.</span>quantity<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+    
+  <span class="token keyword">get</span> <span class="token function">taxableCharge</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>baseCharge <span class="token operator">-</span> <span class="token function">taxThreshold</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>year<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> rawReading <span class="token operator">=</span> <span class="token function">acquireReading</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> aReading <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Reading</span><span class="token punctuation">(</span>rawReading<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> taxableCharge <span class="token operator">=</span> aReading<span class="token punctuation">.</span>taxableCharge<span class="token punctuation">;</span>
+</code></pre></div><ul><li>파생 데이터 모두를 필요한 시점에 계산되게 만들었기 때문에 저장된 데이터를 갱신하더라도 문제가 생길 일이 없다.</li> <li>프로그램의 다른 부분에서 데이터를 갱신할 가능성이 꽤 있을 때는 클래스로 묶어두면 큰 도움이 된다.</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/wally-wally-til/til/refactoring/chapter03-03.html" class="prev">
+        Chapter03-03
+      </a></span> <span class="next"><a href="/wally-wally-til/til/refactoring/chapter03-05.html">
+        Chapter03-05
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/wally-wally-til/assets/js/app.7290cc93.js" defer></script><script src="/wally-wally-til/assets/js/2.fd76ebd9.js" defer></script><script src="/wally-wally-til/assets/js/41.e220fcee.js" defer></script>
+  </body>
+</html>
